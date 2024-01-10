@@ -1,0 +1,16 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Customers {
+  _id: ID!
+  name: String!
+  document: String!
+  email: String!
+}
+
+type Query {
+  customer(_id: String!): Customers!
+  users(skip: Int! = 0, take: Int! = 25): [Customers!]!
+  count: Float!
+}
